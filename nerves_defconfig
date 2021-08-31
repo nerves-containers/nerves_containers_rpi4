@@ -1,5 +1,5 @@
 BR2_aarch64=y
-BR2_cortex_a72=y
+BR2_cortex_a53=y
 BR2_ARM_FPU_VFPV4=y
 BR2_TAR_OPTIONS="--no-same-owner"
 BR2_ENABLE_DEBUG=y
@@ -31,7 +31,7 @@ BR2_LINUX_KERNEL_USE_CUSTOM_CONFIG=y
 BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE="${NERVES_DEFCONFIG_DIR}/linux-5.10.defconfig"
 BR2_LINUX_KERNEL_XZ=y
 BR2_LINUX_KERNEL_DTS_SUPPORT=y
-BR2_LINUX_KERNEL_INTREE_DTS_NAME="broadcom/bcm2710-rpi-3-b broadcom/bcm2710-rpi-cm3 broadcom/bcm2710-rpi-3-b-plus"
+BR2_LINUX_KERNEL_INTREE_DTS_NAME="broadcom/bcm2710-rpi-3-b broadcom/bcm2710-rpi-cm3 broadcom/bcm2710-rpi-3-b-plus broadcom/bcm2837-rpi-3-b"
 BR2_LINUX_KERNEL_CUSTOM_DTS_PATH="${NERVES_DEFCONFIG_DIR}/ramoops.dts"
 BR2_PACKAGE_BUSYBOX_CONFIG="${BR2_EXTERNAL_NERVES_PATH}/board/nerves-common/busybox.config"
 BR2_PACKAGE_BUSYBOX_CONFIG_FRAGMENT_FILES="${NERVES_DEFCONFIG_DIR}/busybox_defconfig"
