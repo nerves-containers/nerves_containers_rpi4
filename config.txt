@@ -25,7 +25,8 @@ disable_splash=1
 # configuration. See Target packages->Hardware handling->Firmware.
 gpu_mem=256
 
-# Disable Overscan
+# Disable overscan assuming the display supports displaying the full resolution
+# If the text shown on the screen disappears off the edge, comment this out
 disable_overscan=1
 
 # Enable I2C, SPI, and audio
