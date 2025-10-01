@@ -12,6 +12,123 @@ follows:
    releases, and Linux kernel updates. They're also made to fix bugs and add
    features to the build infrastructure.
 
+## v1.31.4
+
+* Changes
+  * Synchronize and fix Raspberry Pi camera settings
+
+## v1.31.3
+
+This is an important security/bug fix that addresses Erlang CVEs for the ssh
+module (see Erlang release notes).
+
+* Package updates
+  * [nerves_system_br v1.31.7](https://github.com/nerves-project/nerves_system_br/releases/tag/v1.31.7). Also
+    see [nerves_system_br v1.31.6](https://github.com/nerves-project/nerves_system_br/releases/tag/v1.31.6)
+
+* Important derived package updates
+  * [Erlang/OTP 27.3.4.3](https://erlang.org/download/OTP-27.3.4.3.README.md)
+  * [Buildroot 2025.02.6](https://lore.kernel.org/buildroot/b051d400-debc-4269-975a-b2992eed8d61@rnout.be/T/)
+
+## v1.31.2
+
+This is a security/bug fix release.
+
+* Package updates
+  * [nerves_system_br v1.31.5](https://github.com/nerves-project/nerves_system_br/releases/tag/v1.31.5)
+
+* Important derived package updates
+  * [Erlang/OTP 27.3.4.2](https://erlang.org/download/OTP-27.3.4.2.README.md)
+  * [fwup 1.13.2](https://github.com/fwup-home/fwup/releases/tag/v1.13.2)
+
+## v1.31.1
+
+This is a security/bug fix release.
+
+* Package updates
+  * [Erlang/OTP 27.3.4.1](https://erlang.org/download/OTP-27.3.4.1.README.md)
+  * [Buildroot 2025.02.3 (fixed 2025.02.2)](https://lore.kernel.org/buildroot/49d039c0-8121-4a91-8a69-889376f85c71@rnout.be/T/)
+  * Raspberry Pi WiFi firmware 1:20240709-2~bpo12+1+rpt3
+  * [rpi-libcamera v0.5.0+rpt20250429](https://github.com/raspberrypi/libcamera/releases/tag/v0.5.0%2Brpt20250429)
+  * rpicam-apps 1.7.0
+  * [erlinit 1.14.3](https://github.com/nerves-project/erlinit/releases/tag/v1.14.3)
+  * [fwup 1.13.0](https://github.com/fwup-home/fwup/releases/tag/v1.13.0)
+
+## v1.31.0
+
+This is a major Buildroot update.
+
+Please see the [nerves_system_br v1.31.0 release notes](https://github.com/nerves-project/nerves_system_br/releases/tag/v1.31.0)
+for additional information if you've forked this system.
+
+* Changes
+  * Add support for the RPi Touch Display 2
+
+* Updated dependencies
+  * [Buildroot 2025.02.1](https://lore.kernel.org/buildroot/60b8483c-b717-41ce-a406-bceb71c3a089@rnout.be/T/)
+
+## v1.30.1
+
+This is a security/bug fix update.
+
+* Updated dependencies
+  * [Erlang/OTP 27.3.3](https://erlang.org/download/OTP-27.3.3.README)
+  * [nerves_system_br v1.30.1](https://github.com/nerves-project/nerves_system_br/releases/tag/v1.30.1)
+
+## v1.30.0
+
+This is a major Buildroot update.
+
+Please see the [nerves_system_br v1.30.0 release notes](https://github.com/nerves-project/nerves_system_br/releases/tag/v1.30.0)
+for upgrade instructions if you've forked this system.
+
+* Changes
+  * Add REUSE compliance to help improve OSS copyright and licensing accuracy
+  * Update Raspberry Pi libraries and firmware to latest releases
+
+* Updated dependencies
+  * [Erlang/OTP 27.3](https://erlang.org/download/OTP-27.3.README.md)
+  * [Buildroot 2024.11.2](https://lore.kernel.org/buildroot/87v7t3nyls.fsf@dell.be.48ers.dk/T/)
+  * Linux 6.6.74 (Raspberry Pi 1.20250127 release)
+  * rpicam-apps 1.5.3
+  * rpi-libcamera v0.3.2+rpt20241119
+  * rpi-distro-firmware-nonfree 1:20230625-2+rpt3
+
+## v1.29.1
+
+This is a security/bug fix update.
+
+* Changes
+  * Support hardware PWM
+  * Support the use of NVME SSDs
+
+* Updated dependencies
+  * [nerves_system_br v1.29.3](https://github.com/nerves-project/nerves_system_br/releases/tag/v1.29.3)
+  * [Buildroot 2024.08.3](https://lore.kernel.org/buildroot/874j3e17ek.fsf@dell.be.48ers.dk/T/)
+  * [Erlang/OTP 27.2](https://erlang.org/download/OTP-27.2.README)
+  * Linux 6.6.64 with the Raspberry Pi and PREEMPT_RT patches
+  * [fwup v1.12.0](https://github.com/fwup-home/fwup/releases/tag/v1.12.0)
+
+## v1.29.0
+
+This is a major Erlang and Buildroot update.
+
+Please see the [nerves_system_br v1.29.0 release notes](https://github.com/nerves-project/nerves_system_br/releases/tag/v1.29.0)
+for upgrade instructions if you've forked this system.
+
+* Changes
+  * Applied and enabled the Real-Time Linux patch set, PREEMPT_RT. Please see
+    write-ups on the web for benefits and how to use. The impact of this patch
+    shouldn't be noticeable to most Nerves users.
+  * Switch CPU frequency governor from conservative to the more modern
+    schedutil. See [LWN article](https://lwn.net/Articles/682391/) for details.
+  * Fix missing option for out-of-the-box QMI (cellular modem) support
+
+* Updated dependencies
+  * [nerves_system_br v1.29.1](https://github.com/nerves-project/nerves_system_br/releases/tag/v1.29.1)
+  * [Buildroot 2024.08.2](https://lore.kernel.org/buildroot/871pzex7gn.fsf@dell.be.48ers.dk/T/)
+  * Linux 6.6.51 (Raspberry Pi stable_20241008 release)
+
 ## v1.28.1
 
 This is a security/bug fix update.
@@ -29,7 +146,7 @@ This is a security/bug fix update.
 
 ## v1.28.0
 
-This is a major Erlang and Buildroot.
+This is a major Erlang and Buildroot update.
 
 Please see the [nerves_system_br v1.28.0 release notes](https://github.com/nerves-project/nerves_system_br/releases/tag/v1.28.0)
 for upgrade instructions if you've forked this system.
